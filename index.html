@@ -42,10 +42,50 @@
 
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/roofsie.css?v=2" />
-    <link rel="stylesheet" href="assets/css/roofsie-responsive.css?v=2" />
+    <link rel="stylesheet" href="assets/css/roofsie-responsive.css" />
 </head>
 
 <style>
+      .logo-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo {
+    height: 100px;
+    width: auto;
+}
+
+.name {
+    margin-top: 6px;
+    margin-bottom: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    text-align: center;
+}
+    .main-header__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.company-name {
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2C2C2C;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
           /* Optional: Add hover effects to icons */
 .feature-one__icon i {
     font-size: 48px;
@@ -234,7 +274,7 @@
 
 
     <div class="page-wrapper">
-        <header class="main-header clearfix">
+             <header class="main-header clearfix">
             <!-- <div class="main-header__logo">
                 <a href="index.html"><img src="assets/images/logo1.png" alt="" style="height: 100px;
                 "></a>
@@ -280,17 +320,22 @@
                     </div>
                 </div>
             </div>
-            <nav class="main-menu clearfix">
+            <nav class="main-menu clearfix" style="padding-bottom: 30px;">
                 <div class="main-menu__wrapper clearfix">
                     <div class="main-menu__wrapper-inner clearfix">
                         <div class="main-menu__left">
                             <div class="main-menu__main-menu-box">
                                 <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                                  <div class="main-header__logo">
-                <a href="index.html"><img src="assets/images/logo1.png" alt="" style="height: 100px;
-                "></a>
-            </div>
-                                <ul class="main-menu__list">
+    <a href="index.html">
+        <img src="assets/images/logo1.png" alt="Ambattur Roofings" style="height:100px;">
+    </a>
+
+<h4 class="company-name">AMBATTUR ROOFINGS</h4>
+</div>
+
+<!-- <h4 class="company-name">AMBATTUR ROOFINGS</h4> -->
+                                <ul class="main-menu__list"style="padding-top:20px;">
                                     <li class="">
                                         <a href="index.html">Home </a>
                                      
@@ -306,7 +351,7 @@
                             </div>
                         </div>
                         <div class="main-menu__right">
-                            <div class="main-menu__call">
+                            <!-- <div class="main-menu__call">
                                 <div class="main-menu__call-icon">
                                     <i class="fas fa-phone"></i>
                                 </div>
@@ -314,11 +359,11 @@
                                     <p>Call Anytime</p>
                                     <a href="tel:+04429565851">+044 2956 5851</a>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- <div class="main-menu__search-box">
                                 <a href="#" class="main-menu__search search-toggler icon-magnifying-glass"></a>
                             </div> -->
-                            <div class="main-menu__btn-box">
+                            <div class="main-menu__btn-box" style="padding-top:20px;">
                                 <a href="contact.html" class="thm-btn main-menu__btn">
                                      <i class="fa fa-arrow-right"></i> Enquiry Now</a>
                             </div>
@@ -564,7 +609,7 @@
                     </div>
                     
                     <p class="about-one__text">
-                        <strong>PSR ENTERPRISES</strong>, our sister concern, specializes in Roofing Structures, Metal Roofs, and many more support products. We are also service providers for Steel Fabrication, Erection &amp; Roof Works.
+                        <strong>Ambattur Roofings</strong>specializes in Roofing Structures, Metal Roofs, and many more support products. We are also service providers for Steel Fabrication, Erection &amp; Roof Works.
                     </p>
                     
                     <p class="about-one__text">
@@ -1138,7 +1183,8 @@
 </section>
 <!--CTA One End-->
 
-          <footer class="site-footer">
+               <!--Site Footer Start-->
+     <footer class="site-footer">
             <div class="site-footer-img-1">
                 <img src="assets/images/resources/site-footer-img-1.png" alt="">
             </div>
@@ -1186,7 +1232,10 @@
                         <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                             <div class="footer-widget__column footer-widget__contact">
                                 <h3 class="footer-widget__title">Contact</h3>
-                                <p class="footer-widget__contact-text">No. 94A (NP), SIDCO Industrial Estate,<br />Ambattur, Chennai – 600 098</p>
+                                <p class="footer-widget__contact-text">
+                                    Ambattur Roofings<br>
+                                    No. 94A (NP), SIDCO Industrial Estate,
+                                    Ambattur,<br> Chennai – 600 098</p>
                                 <ul class="list-unstyled footer-widget__contact-list">
                                     <li>
                                         <div class="icon">
@@ -1196,22 +1245,26 @@
                                             <p><a href="mailto:ambatturroofings@gmail.com">ambatturroofings@gmail.com</a></p>
                                         </div>
                                     </li>
-                                    <li>
-                                        <div class="icon">
-                                            <i class="fas fa-phone-alt"></i>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="tel:04429565851">044 2956 5851</a></p>
-                                        </div>
-                                    </li>
+                                   <li>
+    <div class="icon">
+        <i class="fas fa-globe"></i>
+    </div>
+    <div class="text">
+        <p>
+            <a href="https://www.ambatturroofings.com" target="_blank">
+                www.ambatturroofings.com
+            </a>
+        </p>
+    </div>
+</li>
                                     <li>
                                         <div class="icon">
                                             <i class="fas fa-mobile-alt"></i>
                                         </div>
                                         <div class="text">
                                             <p>
-                                                <a href="tel:+919043750051">+91 90437 50051</a> / 
-                                                <a href="tel:+919381708825">+91 93817 08825</a> / 
+                                                <a href="tel:+919043750051">+91 90437 50051</a>  <br>
+                                                <a href="tel:+919381708825">+91 93817 08825</a>      <br>
                                                 <a href="tel:+919445610612">+91 94456 10612</a></p>
                                         </div>
                                     </li>
@@ -1234,22 +1287,23 @@
                 </div>
             </div>
         </footer>
-
+        <!--Site Footer End-->
 
     </div><!-- /.page-wrapper -->
 
-
-    <div class="mobile-nav__wrapper">
+   <div class="mobile-nav__wrapper">
         <div class="mobile-nav__overlay mobile-nav__toggler"></div>
         <!-- /.mobile-nav__overlay -->
         <div class="mobile-nav__content">
             <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
-            <div class="logo-box">
-                <a href="index.html" aria-label="logo image">
-                    <img src="assets/images/logo1.png" style="height: 100px;"
-                        alt="" /></a>
-            </div>
+           <div class="logo-box">
+    <a href="index.html" aria-label="Ambattur Roofings">
+        <img src="assets/images/logo1.png" alt="Ambattur Roofings Logo" class="header-logo">
+    </a>
+
+    <h4 class="name" >AMBATTUR ROOFINGS</h4>
+</div>
             <!-- /.logo-box -->
             <div class="mobile-nav__container"></div>
             <!-- /.mobile-nav__container -->
@@ -1262,7 +1316,7 @@
                 </li>
                 <li>
                     <i class="fa fa-phone-alt"></i>
-                    <a href="tel:044 2956 5851">044 2956 5851</a>
+                    <a href="tel:+919043750051">+91 90437 50051</a>
                 </li>
             </ul><!-- /.mobile-nav__contact -->
             <div class="mobile-nav__top">
@@ -1279,7 +1333,6 @@
         </div>
         <!-- /.mobile-nav__content -->
     </div>
-    <!-- /.mobile-nav__wrapper -->
 
 
 
