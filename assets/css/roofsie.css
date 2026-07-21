@@ -17,7 +17,7 @@
 # Common
 --------------------------------------------------------------*/
 :root {
-  --roofsie-font: 'Manrope', sans-serif;
+  --roofsie-font: 'Poppins', sans-serif;
   --roofsie-reey-font: "reeyregular";
 
   /* Text */
@@ -33,8 +33,8 @@
   --roofsie-base-rgb: 249, 178, 29;
 
   /* Black */
-  --roofsie-black: #111111;
-  --roofsie-black-rgb: 17, 17, 17;
+--roofsie-black: #1F2937;
+--roofsie-black-rgb: 61, 53, 47;
 
   /* Light Background */
   --roofsie-primary: #F8F5F1;
@@ -492,7 +492,7 @@ ul {
 .main-header__logo {
   position: absolute;
   top: 0;
-  left: 60px;
+  left: 50px;
   z-index: 2;
 }
 
@@ -669,6 +669,8 @@ ul {
 .main-menu__left {
   display: block;
   float: left;
+  padding-left: 280px;
+  
 }
 
 .main-menu__main-menu-box {
@@ -2407,8 +2409,8 @@ ul {
 
 .main-slider .container {
   position: relative;
-  padding-top: 157px;
-  padding-bottom: 155px;
+  padding-top: 137px;
+  padding-bottom: 137px;
   z-index: 30;
 }
 
@@ -2417,7 +2419,7 @@ ul {
   top: 0;
   right: 0;
   bottom: 0;
-  left: 150px;
+  left: 0px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -3142,7 +3144,7 @@ ul {
   justify-content: center;
 }
 
-.feature-one__icon:before {
+/* .feature-one__icon:before {
   content: "";
   position: absolute;
   top: -60px;
@@ -3151,7 +3153,7 @@ ul {
   border-bottom: 60px solid var(--roofsie-base);
   border-left: 69px solid transparent;
   border-right: 69px solid transparent;
-}
+} */
 
 .feature-one__icon span {
   position: relative;
@@ -3817,7 +3819,7 @@ ul {
 
 .why-choose-one__author-sign {
   position: absolute;
-  top: 225px;
+  top: 805px;
   left: 0;
 }
 
@@ -9775,7 +9777,7 @@ ul {
 .services-page {
   position: relative;
   display: block;
-  padding: 120px 0 90px;
+  padding: 120px 0 0px;
 }
 
 /*--------------------------------------------------------------
@@ -10988,7 +10990,7 @@ ul {
 .gallery-carousel-page {
   position: relative;
   display: block;
-  padding: 120px 0 165px;
+  /* padding: 120px 0 165px; */
 }
 
 .gallery-carousel-page .gallery-page__single {
