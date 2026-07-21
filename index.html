@@ -18,8 +18,7 @@
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet" />
-
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
     <link rel="stylesheet" href="assets/vendors/animate/custom-animate.css" />
@@ -42,11 +41,110 @@
     <link rel="stylesheet" href="assets/vendors/timepicker/timePicker.css" />
 
     <!-- template styles -->
-    <link rel="stylesheet" href="assets/css/roofsie.css" />
+    <link rel="stylesheet" href="assets/css/roofsie.css?v=2" />
     <link rel="stylesheet" href="assets/css/roofsie-responsive.css" />
 </head>
 
 <style>
+          /* Optional: Add hover effects to icons */
+.feature-one__icon i {
+    font-size: 48px;
+    color:  #F9B21D;
+    transition: all 0.3s ease;
+}
+
+.feature-one__single:hover .feature-one__icon i {
+    transform: scale(1.1) rotate(-5deg);
+    color: #1a1a2e;
+}
+
+/* Alternative: Circular background for icons */
+.feature-one__icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(241, 90, 36, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.feature-one__single:hover .feature-one__icon {
+    background:  #F9B21D;
+}
+
+.feature-one__single:hover .feature-one__icon i {
+    color: #ffffff;
+}
+/* Responsive alignment fixes */
+@media (max-width: 1199px) {
+    .about-one__left {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 991px) {
+    .about-one__points-left {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-one__points-left li {
+        flex-wrap: wrap;
+    }
+    
+    .about-one__points-left .text-box-two {
+        flex: 0 0 100%;
+        padding-left: 60px;
+    }
+    
+    .about-one__product-list ul {
+        padding-left: 20px;
+    }
+    
+    .about-one__product-list ul li {
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+}
+
+/* Optional: Product list styling */
+.about-one__product-list {
+    margin: 15px 0 20px;
+}
+
+.about-one__product-list ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 20px;
+}
+
+.about-one__product-list ul li {
+    position: relative;
+    padding-left: 22px;
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.about-one__product-list ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color:  #F9B21D;
+    font-weight: bold;
+}
+
+@media (max-width: 576px) {
+    .about-one__product-list ul {
+        grid-template-columns: 1fr;
+    }
+}
+
     .floating-contact {
   position: fixed;
   right: 20px;
@@ -120,12 +218,12 @@
 <div class="floating-contact">
 
   <!-- WhatsApp -->
-  <a href="https://wa.me/919445610612" target="_blank" class="contact-btn whatsapp">
+  <a href="https://wa.me/919043750051" target="_blank" class="contact-btn whatsapp">
     <i class="fab fa-whatsapp"></i>
   </a>
 
   <!-- Call -->
-  <a href="tel:+919381708825" class="contact-btn call">
+  <a href="tel:+919043750051" class="contact-btn call">
     <i class="fas fa-phone"></i>
   </a>
 
@@ -137,9 +235,10 @@
 
     <div class="page-wrapper">
         <header class="main-header clearfix">
-            <div class="main-header__logo">
-                <a href="index.html"><img src="assets/images/logo.png" alt="" style="height: 180px;"></a>
-            </div>
+            <!-- <div class="main-header__logo">
+                <a href="index.html"><img src="assets/images/logo1.png" alt="" style="height: 100px;
+                "></a>
+            </div> -->
             <div class="main-header__top">
                 <div class="main-header__top-inner">
                     <div class="main-header__top-address">
@@ -149,7 +248,7 @@
                                     <span class="fa fa-phone"></span>
                                 </i>
                                 <div class="text">
-                                    <p>044 2956 5851</p>
+                                    <p>+91 90437 50051</p>
                                 </div>
                             </li>
                             <li>
@@ -187,6 +286,10 @@
                         <div class="main-menu__left">
                             <div class="main-menu__main-menu-box">
                                 <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                                 <div class="main-header__logo">
+                <a href="index.html"><img src="assets/images/logo1.png" alt="" style="height: 100px;
+                "></a>
+            </div>
                                 <ul class="main-menu__list">
                                     <li class="">
                                         <a href="index.html">Home </a>
@@ -212,9 +315,9 @@
                                     <a href="tel:+04429565851">+044 2956 5851</a>
                                 </div>
                             </div>
-                            <div class="main-menu__search-box">
+                            <!-- <div class="main-menu__search-box">
                                 <a href="#" class="main-menu__search search-toggler icon-magnifying-glass"></a>
-                            </div>
+                            </div> -->
                             <div class="main-menu__btn-box">
                                 <a href="contact.html" class="thm-btn main-menu__btn">
                                      <i class="fa fa-arrow-right"></i> Enquiry Now</a>
@@ -256,7 +359,7 @@
                     <div class="row">
                         <div class="col-xl-7 col-lg-8">
                             <div class="main-slider__content">
-                                <p class="main-slider__sub-title">Since 2000 - Trusted Manufacturer</p>
+                                <p class="main-slider__sub-title">Since 2016 - Trusted Manufacturer</p>
                                 <h2 class="main-slider__title">Quality Roofing Profile Sheets & Solutions</h2>
                                 <p class="main-slider__text">We manufacture and supply premium roofing sheets, polycarbon sheets, ventilators, water gutters and fastners for all types of residential, commercial and industrial projects.</p>
                                 <div class="main-slider__btn-box">
@@ -326,7 +429,7 @@
 </section>
 <!--Main Slider End-->
         <!--Feature One Start-->
-      <section class="feature-one">
+   <section class="feature-one">
     <div class="container">
         <div class="feature-one__inner">
             <div class="feature-one__dot">
@@ -338,25 +441,28 @@
                     <div class="feature-one__single">
                         <div class="feature-one__top">
                             <div class="feature-one__icon">
-                                <span class="icon-roof-5"></span>
+                                <!-- Icon for Quality Roofing Sheets -->
+                                <i class="fas fa-layer-group"></i>
                             </div>
                             <div class="feature-one__title-box">
-                                <h3 class="feature-one__title"><a href="#">Quality <br> Roofing Sheets</a></h3>
+                                <h3 class="feature-one__title">
+                                    <a href="#">Quality <br> Roofing Sheets</a></h3>
                             </div>
                         </div>
                         <div class="feature-one__single-inner">
-                            <p class="feature-one__text">We manufacture roofing profile, 
-                                polycarbon sheets and accessories with strength and durability.</p>
+                            <p class="feature-one__text">We manufacture roofing profile, polycarbon sheets and accessories with strength and durability.</p>
                         </div>
                     </div>
                 </div>
                 <!--Feature One Single End-->
+                
                 <!--Feature One Single Start-->
                 <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
                     <div class="feature-one__single">
                         <div class="feature-one__top">
                             <div class="feature-one__icon">
-                                <span class="icon-construction-worker"></span>
+                                <!-- Icon for Total Roofing Solutions -->
+                                <i class="fas fa-home"></i>
                             </div>
                             <div class="feature-one__title-box">
                                 <h3 class="feature-one__title"><a href="#">Total Roofing <br> Solutions</a></h3>
@@ -368,12 +474,14 @@
                     </div>
                 </div>
                 <!--Feature One Single End-->
+                
                 <!--Feature One Single Start-->
                 <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
                     <div class="feature-one__single">
                         <div class="feature-one__top">
                             <div class="feature-one__icon">
-                                <span class="icon-online-registration"></span>
+                                <!-- Icon for Competitive Pricing -->
+                                <i class="fas fa-tags"></i>
                             </div>
                             <div class="feature-one__title-box">
                                 <h3 class="feature-one__title"><a href="#">Competitive <br> Pricing</a></h3>
@@ -391,14 +499,14 @@
 </section>
         <!--Feature One End-->
 
-      <!--About One Start-->
 <section class="about-one">
     <div class="about-one__shape float-bob-x">
         <img src="assets/images/shapes/about-one-shape.png" alt="">
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-xl-6">
+            <!-- Left Column - Image & Points -->
+            <div class="col-xl-6 col-lg-12">
                 <div class="about-one__left">
                     <div class="about-one__img-box wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms">
                         <div class="about-one__img">
@@ -414,7 +522,7 @@
                                 </div>
                                 <div class="about-one__satisfied-content">
                                     <div class="about-one__satisfied-count-box">
-                                        <h3 class="odometer" data-count="8">00</h3>
+                                        <h3 class="odometer" data-count="9">00</h3>
                                         <span class="about-one__satisfied-percent">+</span>
                                     </div>
                                     <p class="about-one__satisfied-text">Years of Excellence</p>
@@ -423,9 +531,13 @@
                         </div>
                         <div class="about-one__big-text">Roofings</div>
                     </div>
+                    
+                   
                 </div>
             </div>
-            <div class="col-xl-6">
+            
+            <!-- Right Column - Content -->
+            <div class="col-xl-6 col-lg-12">
                 <div class="about-one__right">
                     <div class="section-title text-left">
                         <div class="section-sub-title-box">
@@ -434,44 +546,39 @@
                                 <img src="assets/images/shapes/section-title-shape-1.png" alt="">
                             </div>
                         </div>
-                        <h2 class="section-title__title">Leading Manufacturer of Quality Roofing Solutions</h2>
+                        <h2 class="section-title__title">Premium Manufacturer of Roofing Sheets & Accessories Since 2016</h2>
                     </div>
-                    <p class="about-one__text">Established as a Partnership firm in the year 2016, we "Ambattur Roofings" are a leading Manufacturer of a wide range of Profile Sheets, Roofing Sheets, Turbo Ventilators, Louvers and supply Fastners. Based in Chennai, we are committed to delivering superior quality products for residential, commercial and industrial projects.</p>
-                    <ul class="list-unstyled about-one__points">
-                        <li>
-                            <div class="icon-box">
-                                <div class="icon">
-                                    <span class="icon-confirmation"></span>
-                                </div>
-                                <div class="text-box">
-                                    <p>Premium Quality Products</p>
-                                </div>
-                            </div>
-                            <div class="text-box-two">
-                                <p>Manufacturing high-quality roofing sheets, polycarbon sheets and accessories.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon-box">
-                                <div class="icon">
-                                    <span class="icon-confirmation"></span>
-                                </div>
-                                <div class="text-box">
-                                    <p>Complete Roofing Solutions</p>
-                                </div>
-                            </div>
-                            <div class="text-box-two">
-                                <p>From ventilators and louvers to water gutters and fastners - we have it all.</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <a href="products.html" class="thm-btn about-one__btn"> <i class="fa fa-arrow-right"></i> Explore Products</a>
+                    
+                    <p class="about-one__text">
+                        We are engaged in <strong>AMBATTUR ROOFINGS</strong> as a manufacturer and supplier of Profile Roofing Sheets and Roof Accessories since 2016. Our wide range of products includes:
+                    </p>
+                    
+                    <div class="about-one__product-list">
+                        <ul>
+                            <li>Pre-Painted Colour Coated Profile Roofing Sheets</li>
+                            <li>Crimp Curve Roofing Sheets</li>
+                            <li>Profile Ridge, Gutter, and Barge Cap</li>
+                            <li>Polycarbonate Profile Sheets</li>
+                            <li>Turbo Ventilators and Hardware Items</li>
+                        </ul>
+                    </div>
+                    
+                    <p class="about-one__text">
+                        <strong>PSR ENTERPRISES</strong>, our sister concern, specializes in Roofing Structures, Metal Roofs, and many more support products. We are also service providers for Steel Fabrication, Erection &amp; Roof Works.
+                    </p>
+                    
+                    <p class="about-one__text">
+                        We deliver our products with premium quality at the best prices. Our motto is to satisfy customers with quality work and complete projects within the time frame at normal transport costs. Our products are attractive, easy to maintain, and offer design flexibility for any construction need - whether home, office, or factory. Made using the latest technology, they match international standards. Customers can choose colors and specifications to get the best possible product at cost-effective prices.
+                    </p>
+                    
+                    <a href="products.html" class="thm-btn about-one__btn" style="margin-top:30px;"> 
+                        <i class="fa fa-arrow-right"></i> Explore Our Products
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!--About One End-->
 
         <!--Services One Start-->
         <section class="services-one">
@@ -549,7 +656,7 @@
                            <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="600ms">
                         <div class="services-one__single">
                             <div class="services-one__img">
-                                <img src="assets/images/product6.webp" alt="">
+                                <img src="assets/images/33.jpeg" alt="" style="height: 370px;">
                             </div>
                             <div class="services-one__content">
                                 <div class="services-one__icon">
@@ -593,48 +700,55 @@
                     </div>
                     <p class="why-choose-one__text">Ambattur Roofings has been a trusted name in the roofing industry since 2016. We combine quality manufacturing with excellent customer service to deliver the best roofing solutions for your projects.</p>
                     <div class="why-choose-one__points-box">
-                        <div class="row">
-                            <div class="col-xl-6 col-lg-6 col-md-6">
-                                <div class="why-choose-one__points-single">
-                                    <div class="why-choose-one__points-icon">
-                                        <span class="icon-roof-2"></span>
-                                    </div>
-                                    <div class="why-choose-one__points-title-box">
-                                        <h4 class="why-choose-one__points-title">Premium <br> Quality Products</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6 col-lg-6 col-md-6">
-                                <div class="why-choose-one__points-single">
-                                    <div class="why-choose-one__points-icon">
-                                        <span class="icon-shield"></span>
-                                    </div>
-                                    <div class="why-choose-one__points-title-box">
-                                        <h4 class="why-choose-one__points-title">Trusted <br> Since 2016</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6 col-lg-6 col-md-6">
-                                <div class="why-choose-one__points-single">
-                                    <div class="why-choose-one__points-icon">
-                                        <span class="icon-mission"></span>
-                                    </div>
-                                    <div class="why-choose-one__points-title-box">
-                                        <h4 class="why-choose-one__points-title">Complete <br> Solutions</h4>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6 col-lg-6 col-md-6">
-                                <div class="why-choose-one__points-single">
-                                    <div class="why-choose-one__points-icon">
-                                        <span class="icon-construction-worker"></span>
-                                    </div>
-                                    <div class="why-choose-one__points-title-box">
-                                        <h4 class="why-choose-one__points-title">Expert <br> Guidance</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                       <div class="row">
+    <div class="col-xl-6 col-lg-6 col-md-6">
+        <div class="why-choose-one__points-single">
+            <div class="why-choose-one__points-icon">
+                <span class="icon-roof-2"></span>
+            </div>
+            <div class="why-choose-one__points-title-box">
+                <h4 class="why-choose-one__points-title">Premium <br> Quality Products</h4>
+                <p>Manufactured using high-grade materials for lasting strength and durability.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6 col-lg-6 col-md-6">
+        <div class="why-choose-one__points-single">
+            <div class="why-choose-one__points-icon">
+                <span class="icon-shield"></span>
+            </div>
+            <div class="why-choose-one__points-title-box">
+                <h4 class="why-choose-one__points-title">Trusted <br> Since 2016</h4>
+                <p>Serving customers with reliable roofing solutions and exceptional quality.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6 col-lg-6 col-md-6">
+        <div class="why-choose-one__points-single">
+            <div class="why-choose-one__points-icon">
+                <span class="icon-mission"></span>
+            </div>
+            <div class="why-choose-one__points-title-box">
+                <h4 class="why-choose-one__points-title">Complete <br> Solutions</h4>
+                <p>One-stop destination for roofing sheets, accessories, and installation support.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-6 col-lg-6 col-md-6">
+        <div class="why-choose-one__points-single">
+            <div class="why-choose-one__points-icon">
+                <span class="icon-construction-worker"></span>
+            </div>
+            <div class="why-choose-one__points-title-box">
+                <h4 class="why-choose-one__points-title">Expert <br> Guidance</h4>
+                <p>Professional consultation from M. Suresh Raj B.E. for every roofing project.</p>
+            </div>
+        </div>
+    </div>
+</div>
                     </div>
                 </div>
             </div>
@@ -642,13 +756,14 @@
                 <div class="why-choose-one__right">
                     <div class="why-choose-one__img-box">
                         <div class="why-choose-one__img wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms">
-                            <img src="assets/images/why.png" alt="Ambattur Roofings - Quality Roofing Solutions">
+                            <img src="assets/images/11.jpeg" alt="Ambattur Roofings - Quality Roofing Solutions">
                         </div>
                         <div class="why-choose-one__shape-1"></div>
                         <div class="why-choose-one__shape-2"></div>
-                        <div class="why-choose-one__author-sign">
+                        <div class="why-choose-one__author-sign" >
                             <p>M. Suresh Raj B.E.</p>
-                            <p style="font-size: 12px; color: #fff;">Partner, Ambattur Roofings</p>
+                            <p style="font-size: 12px; color: #fff;">
+                                Partner, Ambattur Roofings</p>
                         </div>
                     </div>
                 </div>
@@ -659,7 +774,202 @@
 <!--Why Choose One End-->
 
      
+<section class="gallery-carousel-page" style="padding-top: 20px;">
+            <div class="container">
+                 <!-- <div class="section-title text-center">
+            <div class="section-sub-title-box">
+                <p class="section-sub-title">Testimonials</p>
+                <div class="section-title-shape-1">
+                    <img src="assets/images/shapes/section-title-shape-1.png" alt="">
+                </div>
+            </div>
+            <h2 class="section-title__title">Our Products</h2>
+        </div> -->
+                <div class="gallery-carousel thm-owl__carousel owl-theme owl-carousel carousel-dot-style" data-owl-options='{
+                    "items": 3,
+                    "margin": 30,
+                    "smartSpeed": 700,
+                    "loop":true,
+                    "autoplay": 6000,
+                    "nav":false,
+                    "dots":true,
+                    "navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
+                    "responsive":{
+                        "0":{
+                            "items":1
+                        },
+                        "768":{
+                            "items":2
+                        },
+                        "992":{
+                            "items": 3
+                        }
+                    }
+                }'>
+                    <!--Gallery Page Single Start-->
+                    <div class="item">
+                        <div class="gallery-page__single">
+                            <div class="gallery-page__img">
+                                <img src="assets/images/1.jpeg" alt="" style="height: 400px;" style="object-fit: cover;">
+                                <div class="gallery-page__icon">
+                                    <a class="img-popup" href="assets/images/1.jpeg"><span
+                                            class="fas fa-plus"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+<div class="item">
+                        <div class="gallery-page__single">
+                            <div class="gallery-page__img">
+                                <img src="assets/images/2.jpeg" alt="" style="height: 400px;" style="object-fit: cover;">
+                                <div class="gallery-page__icon">
+                                    <a class="img-popup" href="assets/images/2.jpeg"><span
+                                            class="fas fa-plus"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="gallery-page__single">
+                            <div class="gallery-page__img">
+                                <img src="assets/images/3.jpeg" alt="" style="height: 400px;" style="object-fit: cover;">
+                                <div class="gallery-page__icon">
+                                    <a class="img-popup" href="assets/images/3.jpeg"><span
+                                            class="fas fa-plus"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="gallery-page__single">
+                            <div class="gallery-page__img">
+                                <img src="assets/images/4.jpeg" alt="" style="height: 400px;" style="object-fit: cover;">
+                                <div class="gallery-page__icon">
+                                    <a class="img-popup" href="assets/images/4.jpeg"><span
+                                            class="fas fa-plus"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="gallery-page__single">
+                            <div class="gallery-page__img">
+                                <img src="assets/images/5.jpeg" alt="" style="height: 400px;" style="object-fit: cover;">
+                                <div class="gallery-page__icon">
+                                    <a class="img-popup" href="assets/images/5.jpeg"><span
+                                            class="fas fa-plus"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="gallery-page__single">
+                            <div class="gallery-page__img">
+                                <img src="assets/images/6.jpeg" alt="" style="height: 400px;" style="object-fit: cover;">
+                                <div class="gallery-page__icon">
+                                    <a class="img-popup" href="assets/images/6.jpeg"><span
+                                            class="fas fa-plus"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="gallery-page__single">
+                            <div class="gallery-page__img">
+                                <img src="assets/images/19.jpeg" alt="" style="height: 400px;" style="object-fit: cover;">
+                                <div class="gallery-page__icon">
+                                    <a class="img-popup" href="assets/images/19.jpeg"><span
+                                            class="fas fa-plus"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="gallery-page__single">
+                            <div class="gallery-page__img">
+                                <img src="assets/images/7.jpeg" alt="" style="height: 400px;" style="object-fit: cover;">
+                                <div class="gallery-page__icon">
+                                    <a class="img-popup" href="assets/images/7.jpeg"><span
+                                            class="fas fa-plus"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="gallery-page__single">
+                            <div class="gallery-page__img">
+                                <img src="assets/images/8.jpeg" alt="" style="height: 400px;" style="object-fit: cover;">
+                                <div class="gallery-page__icon">
+                                    <a class="img-popup" href="assets/images/8.jpeg"><span
+                                            class="fas fa-plus"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="gallery-page__single">
+                            <div class="gallery-page__img">
+                                <img src="assets/images/9.jpeg" alt="" style="height: 400px;" style="object-fit: cover;">
+                                <div class="gallery-page__icon">
+                                    <a class="img-popup" href="assets/images/9.jpeg"><span
+                                            class="fas fa-plus"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="gallery-page__single">
+                            <div class="gallery-page__img">
+                                <img src="assets/images/11.jpeg" alt="" style="height: 400px;" style="object-fit: cover;">
+                                <div class="gallery-page__icon">
+                                    <a class="img-popup" href="assets/images/11.jpeg"><span
+                                            class="fas fa-plus"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                 
+   <div class="item">
+                        <div class="gallery-page__single">
+                            <div class="gallery-page__img">
+                                <img src="assets/images/30.jpeg" alt="" style="height: 400px;" style="object-fit: cover;">
+                                <div class="gallery-page__icon">
+                                    <a class="img-popup" href="assets/images/30.jpeg"><span
+                                            class="fas fa-plus"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                       <div class="item">
+                        <div class="gallery-page__single">
+                            <div class="gallery-page__img">
+                                <img src="assets/images/31.jpeg" alt="" style="height: 400px;" style="object-fit: cover;">
+                                <div class="gallery-page__icon">
+                                    <a class="img-popup" href="assets/images/31.jpeg"><span
+                                            class="fas fa-plus"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                       <div class="item">
+                        <div class="gallery-page__single">
+                            <div class="gallery-page__img">
+                                <img src="assets/images/32.jpeg" alt="" style="height: 400px;" style="object-fit: cover;">
+                                <div class="gallery-page__icon">
+                                    <a class="img-popup" href="assets/images/32.jpeg"><span
+                                            class="fas fa-plus"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Gallery Page Single End-->
+                </div>
 
+                
+            </div>
+        </section>
     
 
       
@@ -828,8 +1138,7 @@
 </section>
 <!--CTA One End-->
 
-        <!--Site Footer Start-->
-        <footer class="site-footer">
+          <footer class="site-footer">
             <div class="site-footer-img-1">
                 <img src="assets/images/resources/site-footer-img-1.png" alt="">
             </div>
@@ -842,57 +1151,49 @@
                         <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                             <div class="footer-widget__column footer-widget__about">
                                 <div class="footer-widget__about-text-box">
-                                    <p class="footer-widget__about-text">
-                                       Ambattur Roofings is a leading manufacturer and supplier
-                                        of roofing solutions in Chennai. </p>
+                                    <p class="footer-widget__about-text">Ambattur Roofings is a trusted manufacturer and supplier of quality roofing solutions in Chennai. We specialize in Roofing Profile Sheets, Polycarbon Sheets, Luver, Ventilators, Water Gutters, Fastners, and more.</p>
                                 </div>
                                 <div class="site-footer__social">
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
                                     <a href="https://www.facebook.com/p/Ambattur-roofings-100064736689060/" target="_blank"><i class="fab fa-facebook"></i></a>
-                                    
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
                                     <a href="#"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                             <div class="footer-widget__column footer-widget__explore clearfix">
-                                <h3 class="footer-widget__title">Quick Links</h3>
+                                <h3 class="footer-widget__title">Explore</h3>
                                 <ul class="footer-widget__explore-list list-unstyled clearfix">
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="products.html">Our Products</a></li>
-                                    <li><a href="contact.html">Contact Us</a></li>
-                                    
+                                    <li><a href="contact.html">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
-                          <div class="footer-widget__column footer-widget__explore clearfix">
+                            <div class="footer-widget__column footer-widget__newsletter clearfix">
                                 <h3 class="footer-widget__title">Our Products</h3>
                                 <ul class="footer-widget__explore-list list-unstyled clearfix">
-                                    <li><a href="products.html">Roofing Profile Sheet</a></li>
-                                    <li><a href="products.html">Polycarbon Sheet</a></li>
-                                    <li><a href="products.html">Luver</a></li>
-                                     <li><a href="products.html">Ventilater</a></li>
-                                    <li><a href="products.html">Water Gutter</a></li>
-                                    <li><a href="products.html">Fastners</a></li>
-                                    
+                                    <li><a href="#">Roofing Profile Sheets</a></li>
+                                    <li><a href="#">Polycarbon Sheets</a></li>
+                                    <li><a href="#">Luver</a></li>
+                                    <li><a href="#">Ventilators</a></li>
+                                    <li><a href="#">Water Gutters</a></li>
+                                    <li><a href="#">Fastners</a></li>
                                 </ul>
-                            </div>   
+                            </div>
                         </div>
                         <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                             <div class="footer-widget__column footer-widget__contact">
                                 <h3 class="footer-widget__title">Contact</h3>
-                                <p class="footer-widget__contact-text">No. 94A (NP), SIDCO Industrial Estate,
-Ambattur, Chennai – 600 098.
-(Near Pattaravakkam EB Road)</p>
+                                <p class="footer-widget__contact-text">No. 94A (NP), SIDCO Industrial Estate,<br />Ambattur, Chennai – 600 098</p>
                                 <ul class="list-unstyled footer-widget__contact-list">
                                     <li>
                                         <div class="icon">
                                             <i class="fa fa-envelope"></i>
                                         </div>
                                         <div class="text">
-                                            <p><a href="mailto:ambatturroofings@gmail.com ">
-                                                ambatturroofings@gmail.com</a></p>
+                                            <p><a href="mailto:ambatturroofings@gmail.com">ambatturroofings@gmail.com</a></p>
                                         </div>
                                     </li>
                                     <li>
@@ -900,9 +1201,18 @@ Ambattur, Chennai – 600 098.
                                             <i class="fas fa-phone-alt"></i>
                                         </div>
                                         <div class="text">
-                                            <p><a href="tel:+044 2956 5851">+044 2956 5851</a></p>
-                                             <p><a href="tel:+919445610612">+91 94456 10612</a></p>
-                                              <p><a href="tel:+919381708825">+91 93817 08825</a></p>
+                                            <p><a href="tel:04429565851">044 2956 5851</a></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fas fa-mobile-alt"></i>
+                                        </div>
+                                        <div class="text">
+                                            <p>
+                                                <a href="tel:+919043750051">+91 90437 50051</a> / 
+                                                <a href="tel:+919381708825">+91 93817 08825</a> / 
+                                                <a href="tel:+919445610612">+91 94456 10612</a></p>
                                         </div>
                                     </li>
                                 </ul>
@@ -913,22 +1223,17 @@ Ambattur, Chennai – 600 098.
                 <div class="site-footer__bottom">
                     <div class="row">
                         <div class="col-xl-12">
-                           <div class="site-footer__bottom-inner">
-    <p class="site-footer__bottom-text">
-        © All Copyright <span id="year"></span> by <a href="#">Ambattur Roofings</a> | 
-        Developed by <a href="https://chennaileads.com" target="_blank"> Chennai Leads.com</a>
-    </p>
-</div>
-
-<script>
-    document.querySelector('#year').innerHTML = new Date().getFullYear();
-</script>
+                            <div class="site-footer__bottom-inner">
+                                <p class="site-footer__bottom-text">
+                                    © All Copyright <span id="currentYear"></span> by <a href="#">Ambattur Roofings</a> | 
+                                    Developed by <a href="https://chennaileads.com" target="_blank">Chennai Leads.com</a>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
-        <!--Site Footer End-->
 
 
     </div><!-- /.page-wrapper -->
@@ -942,7 +1247,7 @@ Ambattur, Chennai – 600 098.
 
             <div class="logo-box">
                 <a href="index.html" aria-label="logo image">
-                    <img src="assets/images/logo.png" width="143"
+                    <img src="assets/images/logo1.png" style="height: 100px;"
                         alt="" /></a>
             </div>
             <!-- /.logo-box -->
